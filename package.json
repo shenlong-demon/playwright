@@ -7,5 +7,12 @@
     "@playwright/test": "1.63.0",
     "@types/node": "26.6.2"
   },
-  "scripts": {}
+  "scripts": {
+    "test": "playwright test",
+    "test:staging": "set NODE_ENV=staging&& playwright test --ui",
+    "test:uat": "set NODE_ENV=uat&& playwright test"
+  },
+  "dependencies": {
+    "dotenv": "18.0.1"
+  }
 }
